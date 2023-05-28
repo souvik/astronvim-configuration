@@ -20,8 +20,6 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
-    -- show buffer list
-    ["<leader>fb"] = { "<cmd>Telescope buffers {only_cwd=true, ignore_current_buffer=true, sort_mru=true}<cr>", desc = "Find buffers" },
     -- search string in the current buffer
     ["<leader>bl"] = { "<cmd>Telescope current_buffer_fuzzy_find<cr>", desc = "Search string in current buffer" },
   },
