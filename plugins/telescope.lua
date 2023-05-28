@@ -4,6 +4,8 @@ return {
     -- add a new dependencies to telescope that is our new plugin
   },
   config = function(plugin, opts)
+    require("plugins.configs.telescope")(plugin, opts)
+
     local status_ok, telescope = pcall(require, "telescope")
     if not status_ok then
       return
